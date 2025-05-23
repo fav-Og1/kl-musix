@@ -1,14 +1,14 @@
-export function Layout(){
+// export function Layout(){
     
-    const header = 
+   // const header = 
 
-    return(
-        {header}
-             <main>
+    //return(
+      //  {header}
+            // <main>
 
-             </main>
-        {footer}
+          //   </main>
+       // {footer}
 
             
-    )
-}
+    //)
+//}
