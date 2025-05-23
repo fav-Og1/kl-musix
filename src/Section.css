@@ -1,0 +1,202 @@
+.freeD {
+
+    font-family: 'Nunito';
+font-weight: 800;
+font-size: 4rem;
+line-height: 0.5rem;
+letter-spacing: 1%;
+
+
+}
+
+.freeD1{
+    font-family: 'Nunito';
+font-weight: 600;
+font-size: 4rem;
+
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 0px;
+
+}
+
+.sidet{
+    margin: 0;
+}
+
+.textOne{
+    color: #64D2FF;
+
+}
+
+.textTwo{
+color: #FF453A;
+
+}
+
+.three{
+    color: #ffff;
+
+}
+
+.classB{
+ color:goldenrod
+}
+
+
+.freeScreen {
+display: flex;
+padding-top: 100px;
+
+padding-left: 4.7rem;
+padding-right: 4.7rem;
+
+}
+
+.regbtn2{
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #ffff;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    margin-bottom: 5px;
+}
+
+.downloadLInk{
+    
+    width: 200px;
+}
+
+.anc1{
+    height: 55px;
+    width: 200px;
+
+   border-radius: 10px;
+ overflow: hidden;
+ margin-right: 40px;
+ 
+ 
+}
+
+.downloadClass{
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.message1{
+    color:gray; 
+    white-space:nowrap; 
+    font-size:20px;
+    margin-bottom:15px;
+    line-height:27px }
+
+    .screen1{
+        margin-bottom: 70px;
+        display: block;
+    }
+
+    .screen2{
+        display: none;
+    }
+    .message{
+        margin-bottom: 35px;
+    }
+
+@media  (max-width: 468px){
+
+    .freeScreen {
+        display: flex;
+        flex-direction: column;
+        padding-top: 70px;
+        justify-content: center;
+        padding-left: 5rem;
+        padding-right: 2rem;
+        width: 80%;
+        gap:0;
+        }
+        .freeD {
+
+            font-family: 'nunito';
+        font-weight: 800;
+        font-size: 2rem;
+        line-height: 0.2rem;
+        letter-spacing: 1%;
+        display: flex;
+        flex-direction: column;
+        
+        }
+
+        .message{
+            margin: 20px;
+            margin-left: 0px;
+        }
+        
+        .freeD1{
+            font-family: 'Nunito';
+        font-weight: 800;
+        font-size: 2rem;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+        
+        }
+
+        .message1{
+            color:gray; 
+            white-space:nowrap;
+            font-size:  10px; 
+           margin-bottom: 5px;
+           margin-top: 0px;
+           line-height: 17px;
+        }
+
+        .regbtn2{
+            border-radius: 6px;
+    border: 0.6px solid transparent;
+    padding: 0.4em 1em;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 210px;
+    margin-bottom: 14px;
+        }
+
+        
+.downloadLInk{
+    width:70px
+}
+
+.anc1{
+    margin: 5px;
+    width: 70px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.klperson{
+    width: 290px;
+}
+
+.screen2{
+    width: 310px;
+    margin-bottom: 10px;
+    display: block;
+    
+}
+
+.screen1{
+    display: none;
+}
+
+.downloadClass{
+    margin-bottom: 0px;
+}
+
+
+}
