@@ -69,12 +69,12 @@ export function Layout(props){
             </div>
 
             <div className='footerContact'>
-                <div>
+                <div >
                     <img src={logo} />
                     <p> Copyrights 2025, all rights reserved</p>
                 </div>
                 
-                <div>
+                <div className='cntFormat'>
                     <h4>Company</h4>
                     <ul>
                         <Link to='/about'>About</Link>
@@ -86,7 +86,7 @@ export function Layout(props){
                         <Link to='/about'>Privacy policy</Link>
                     </ul>
                 </div>
-                <div>
+                <div >
                     <h4>support</h4>
                     <Link><img src={fbsmall} /></Link>
                     <Link><img src={igsmall} /></Link>
