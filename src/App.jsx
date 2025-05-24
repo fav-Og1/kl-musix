@@ -1,18 +1,26 @@
 import './index.css'
-import { Header } from "./components/Header"
 import { FreeDownload } from './components/Section'
-import { Articles } from './components/Article'
+
 import { Layout } from './components/Layout'
+import { About } from './components/About'
+import { TermsCon } from './components/TermCon'
+import { Privacy } from './components/Privacy'
+import { Route, Router, Routes } from 'react-router-dom'
 
 function App() {
   
 
   return (
     <>
-      <Layout>
-        <FreeDownload />
-        <Articles />
-      </Layout>
+    <Layout>
+      <Routes>
+             <Route path='/' element={ <FreeDownload />}/>
+             <Route path='/about'   element={ <About />}/>
+             <Route path='/termscon'  element={ <TermsCon />}/>
+             <Route path='privacy'  element={<Privacy />}/>
+        
+      </Routes>
+     </Layout>
     </>
   )
 }

@@ -1,6 +1,14 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import logo from '../assets/kloudaa logo.png'
+import express from '../assets/express1.png'
 import { FaBars   } from 'react-icons/fa'
+import footplaystore from '../assets/footplaystore.png'
+import footapplestore from '../assets/footapplestore.png'
+import fbsmall from '../assets/fbsmall.png'
+import igsmall from '../assets/igsmall.png'
+
+
 
 
 export function Layout(props){
@@ -17,21 +25,24 @@ export function Layout(props){
 
    const header = (
          <header className='header'>
+            <Link to='/'>
                 <div className='logoHolder'>
+
                      <img src={logo}  className='klogo'/> 
-                </div> 
+                </div>
+            </Link>
                 { show &&
                  <nav className='NavOptions'>
-                     <ul>About</ul>
-                     <ul>Privacy Policy</ul>
-                     <ul> Terms and Conditions</ul>
+                     <ul><Link to='/about'>About</Link></ul>
+                     <ul><Link to='/termscon'>About</Link></ul>
+                     <ul> <Link to='/privacy'>About</Link></ul>
                  </nav>
      }
      
                  <nav className='navOptions'>
-                     <ul>About</ul>
-                     <ul>Privacy Policy</ul>
-                     <ul> Terms and Conditions</ul>
+                      <ul><Link to='/about'>About</Link></ul>
+                     <ul><Link to='/termscon'>Terms and Condition</Link></ul>
+                     <ul> <Link to='/privacy'>Privacy Policy</Link></ul>
                  </nav>
                  <FaBars 
                      onClick={onShowclick}
@@ -46,7 +57,43 @@ export function Layout(props){
    const footer = (
      <div>
         <footer>
-            
+            <div style={{}}>
+                <img src={express} />
+            </div>
+            <h2>LISTEN TO YOUR MUSIC EASILY</h2>
+            <p> You can download the kloudaa app using the available </p>
+            <p>platform</p>
+            <div className='footerLogos'>
+                 <img src={footapplestore} />
+                 <img src={footplaystore} />
+            </div>
+
+            <div className='footerContact'>
+                <div>
+                    <img src={logo} />
+                    <p> Copyrights 2025, all rights reserved</p>
+                </div>
+                
+                <div>
+                    <h4>Company</h4>
+                    <ul>
+                        <Link to='/about'>About</Link>
+                    </ul>
+                    <ul>
+                        <Link to='/about'>Terms and Conditions</Link>
+                    </ul>
+                    <ul>
+                        <Link to='/about'>Privacy policy</Link>
+                    </ul>
+                </div>
+                <div>
+                    <h4>support</h4>
+                    <Link><img src={fbsmall} /></Link>
+                    <Link><img src={igsmall} /></Link>
+                    <Link><img src={fbsmall} /></Link>
+                    <Link><img src={igsmall} /></Link>
+                </div>
+            </div>
         </footer>
 
      </div>
@@ -57,11 +104,12 @@ return(
          {header}
             <main>
                 {children}
+            
             </main>
        {footer}
 
     </>
       
-            
+        
     )
 }

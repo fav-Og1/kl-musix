@@ -1,10 +1,12 @@
-import { useState } from 'react'
+
 import screen1 from '../assets/screen1Main.png'
 import screen2 from '../assets/screen2Main.png'
 import '../Section.css'
 import klperson from '../assets/klpersonmain.png'
 import googlePlay from '../assets/googleLogo.png'
 import applestore from '../assets/applemain.png'
+import { Articles } from './Article'
+
 
 export function FreeDownload (){
 
@@ -12,9 +14,9 @@ export function FreeDownload (){
 
 
     return(
-        <section className='freeScreen'>
-            
-            <div className='freeD'>
+        <home>
+           <div  className='freeScreen'>
+                    <div className='freeD'>
                 <p className='textOne message'>
                     Enjoy
                 </p>
@@ -60,8 +62,8 @@ export function FreeDownload (){
                     <img src={klperson}  className='klperson'/>
                 
               
-            </div>
-            <div className='freeD1'>
+                </div>
+                 <div className='freeD1'>
                 <img src={screen1}  className='screen1' />
                 
                         <p className='textOne sidet'>feel</p> 
@@ -75,11 +77,16 @@ export function FreeDownload (){
                 
                 
             </div>
-            
-            
-           
-        </section>
 
+        </div> 
+        <Articles />
+            
+            
+            
+          
+        </home>
+
+        
         
 
     )
