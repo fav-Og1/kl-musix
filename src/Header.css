@@ -2,10 +2,9 @@
     background-color: black;
     height: 10vh;
     display: flex;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    width: 1190px;
+    
+        
     justify-content: space-between;
     padding-left: 5rem;
     padding-right: 5rem;

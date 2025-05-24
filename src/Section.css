@@ -1,6 +1,6 @@
 .freeD {
 
-    font-family: 'Nunito';
+font-family: 'Nunito';
 font-weight: 800;
 font-size: 4rem;
 line-height: 0.5rem;
@@ -46,11 +46,14 @@ color: #FF453A;
 
 
 .freeScreen {
+  background-color: #232323;
+    
 display: flex;
-padding-top: 100px;
+padding-top: 10px;
 
-padding-left: 4.7rem;
-padding-right: 4.7rem;
+padding-left: 5rem;
+padding-right: 5rem;
+width:1190px
 
 }
 
