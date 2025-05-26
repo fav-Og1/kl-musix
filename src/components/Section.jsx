@@ -1,20 +1,21 @@
-
 import screen1 from '../assets/screen1Main.png'
-import screen2 from '../assets/screen2Main.png'
 import '../Section.css'
 import klperson from '../assets/klpersonmain.png'
 import googlePlay from '../assets/googleLogo.png'
 import applestore from '../assets/applemain.png'
 import { Articles } from './Article'
+import { Features } from './Features'
 
 
 export function FreeDownload (){
 
     const message =['Enjoy','unlimited', 'free download.']
 
+    
+
 
     return(
-        <home>
+        <section>
            <div  className='freeScreen'>
                     <div className='freeD'>
                 <p className='textOne message'>
@@ -33,7 +34,7 @@ export function FreeDownload (){
                         Kloudaa music app
                     </span>
                 </p>
-                <button className='regbtn2' >Web app coming soon</button>
+                <button className='regbtn2' >web app coming soon</button>
 
                 <p  className='message1'>
                         Available now :</p>
@@ -57,7 +58,7 @@ export function FreeDownload (){
                 
                    </div>
 
-                   <img src={screen2}  className='screen2' /> 
+                   
              
                     <img src={klperson}  className='klperson'/>
                 
@@ -80,11 +81,11 @@ export function FreeDownload (){
 
         </div> 
         <Articles />
-            
+        <Features />  
             
             
           
-        </home>
+        </section>
 
         
         

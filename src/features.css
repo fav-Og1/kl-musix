@@ -1,0 +1,52 @@
+.features{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+      background-color:  #121212;;
+    height: fit-content;
+    padding-top: 35px;
+    align-items: center;
+}
+
+.subhead{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding-top: 80px;
+}
+
+.divider{
+    /* Group 75094 */
+width: 1200px;
+/* Inside auto layout */
+flex-grow: 0;
+z-index: 2;
+}
+.arrow-block{
+    display: flex;
+  width: 90px;
+  justify-content: space-between;
+}
+
+.circle-arrow{
+    color: white;
+    font-weight: 200;
+    background-color: #232323;
+    width: 30px;
+    border-radius: 20px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.feature-block{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 50px;
+}
+
+

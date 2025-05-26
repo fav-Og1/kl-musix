@@ -7,6 +7,8 @@ import footplaystore from '../assets/footplaystore.png'
 import footapplestore from '../assets/footapplestore.png'
 import fbsmall from '../assets/fbsmall.png'
 import igsmall from '../assets/igsmall.png'
+import { Modal } from './Modal'
+import { Form } from './form'
 
 
 
@@ -14,6 +16,7 @@ import igsmall from '../assets/igsmall.png'
 export function Layout(props){
 
     const { children } = props
+        const [showModal, setShowModal] = useState(true)
 
     const [show,setShow] = useState(false)
 
@@ -48,7 +51,7 @@ export function Layout(props){
                      onClick={onShowclick}
                      className='optionMenu'
                  />
-                 <button className='regbtn'> Web App Coming Soon</button>
+                 <button className='regbtn' onClick={ () => { setShowModal(true)}}> Web App Coming Soon</button>
                  
              </header>
          
@@ -98,9 +101,14 @@ export function Layout(props){
 
      </div>
    )
-
+ function handleCloseModal (){
+    setShowModal(false)
+ }
 return(
     <>
+    {showModal && (<Modal handleCloseModal={handleCloseModal}>
+        <Form  handleCloseModal={handleCloseModal} />
+    </Modal>)}
          {header}
             <main>
                 {children}
