@@ -17,7 +17,7 @@ import { Form } from './form'
 export function Layout(props){
 
     const { children } = props
-        const [showModal, setShowModal] = useState(true)
+        const [showModal, setShowModal] = useState(false)
 
     const [show,setShow] = useState(false)
 
