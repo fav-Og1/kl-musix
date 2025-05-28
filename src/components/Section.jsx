@@ -55,42 +55,38 @@ export function FreeDownload (){
                    <div className='downloadClass'>
                    <div className='anc1'  >
                         <a >
-                    
                             < img src={applestore} className='downloadLInk' />
-
                         </a>
                     </div>
                     
                     <div className='anc1' >
                         <a >
-                    
                             < img src={googlePlay} className='downloadLInk' />
-
                         </a>
                     </div>
                    
                 
                    </div>
-                     <div className='media'>
-                             <img src={screen1}  className='screen2' />
+                    <div className='media'>
+                             <img style={{marginBottom:'35px'}}src={screen1}  className='screen2' />
 
-                             <p className='textOne sidet'>feel</p> 
-                        <p className='textTwo sidet'>
+                             <p style={{marginBottom:'35px'}} className='textOne sidet'>feel</p> 
+                            <p style={{marginBottom:'35px'}} className='textTwo sidet'>
                             music  <span style={{color:'white'}}>in</span> 
-                        </p> 
+                            </p> 
         
-                        <p className='classB sidet'>
+                            <p style={{marginBottom:'35px'}} className='classB sidet'>
                             <span style={{color:'white'}}>a</span> new way
-                        </p>
-                     </div>
+                            </p>
+                    </div>
                    
              
-                    <img src={klperson}  className='klperson'/>
-                
+                     
+                 <img src={klperson}  className='klperson'/>
               
-                </div>
+                    </div>
 
-
+                   
 
 
                  <div className='freeD1'>

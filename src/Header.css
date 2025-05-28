@@ -35,13 +35,18 @@
 @media  (max-width: 468px){
     .header{
         
-        width:90%;
+        width:91%;
         padding-left: 1rem;
-        padding-right: 2rem;
+        padding-right: 1.82rem;
         padding-top: 0.3rem;
     padding-bottom: 0.3rem;
     
 }
+
+.klogo{
+    width: 150px;
+}
+
 
 .optionMenu{
     display: block;

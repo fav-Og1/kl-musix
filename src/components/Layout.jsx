@@ -36,16 +36,16 @@ export function Layout(props){
    const header = (
          <header className='header'>
             <Link to='/'>
-                <div className='logoHolder'>
+                <div  className='logoHolder'>
 
                      <img src={logo}  className='klogo'/> 
                 </div>
             </Link>
                 { show &&
                  <nav className='NavOptions'>
-                     <ul><Link to='/about'>About</Link></ul>
-                     <ul><Link to='/termscon'>Terms and Condition</Link></ul>
-                     <ul> <Link to='/privacy'>Privacy Policy</Link></ul>
+                     <ul onClick={onShowclick}><Link to='/about'>About</Link></ul>
+                     <ul onClick={onShowclick}><Link to='/termscon'>Terms and Condition</Link></ul>
+                     <ul onClick={onShowclick}> <Link to='/privacy'>Privacy Policy</Link></ul>
                  </nav>
      }
      

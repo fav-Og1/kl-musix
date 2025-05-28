@@ -162,6 +162,7 @@ button:focus-visible {
   /* align-items: center;
   justify-content: center; */
   gap: 1rem;
+  overflow-y: auto;
 }
 
 .form-title {
@@ -232,6 +233,12 @@ button h2{
 .form-title{
   font-size: 12px;
   font-weight: 100;
+}
+
+.form-text{
+  height: 35px;
+  font-size: 0.8em;
+  width: 93%;
 }
 
 .express-holder{

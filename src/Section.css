@@ -166,11 +166,13 @@ width:1190px
         padding-top: 70px;
         justify-content: center;
         align-items: center;
-        padding-left: 3rem;
-        padding-right: 3rem;
-        width: 80%;
+        padding-left: 2.9rem;
+        padding-right: 2.9rem;
+        width: 81%;
         gap:0;
-        height: fit-content;
+        
+        
+        
         }
         
         .freeD {
@@ -183,7 +185,8 @@ width:1190px
         display: flex;
         flex-direction: column;
         align-items: center;
-    align-content: space-evenly;
+        height: 1150px;
+    
         
         }
 
@@ -238,14 +241,15 @@ width:1190px
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:10px;
-    height:100px;
-    align-content: space-evenly;
+    
+    height:fit-content;
+    
     margin-bottom: 50px;
 }
 
 .klperson{
     width: 290px;
+    
 }
 
 .express{
