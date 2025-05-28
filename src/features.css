@@ -50,3 +50,25 @@ z-index: 2;
 }
 
 
+@media (max-width: 468px) {
+    .feature-block{
+        flex-direction: column;
+        justify-content: center;
+        place-items: center;
+    
+        padding:0;
+    }
+
+    .description-features{
+        width: 350px;
+        margin-bottom: 10px;
+    }
+
+    .divider{
+        width: 90%;
+    }
+
+    .arrow-block{
+        display: none;
+    }
+}

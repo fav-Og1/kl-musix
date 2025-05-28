@@ -5,17 +5,30 @@ import googlePlay from '../assets/googleLogo.png'
 import applestore from '../assets/applemain.png'
 import { Articles } from './Article'
 import { Features } from './Features'
+import { useState } from 'react'
+import { Modal } from './Modal'
+import { Form } from './form'
 
 
 export function FreeDownload (){
 
     const message =['Enjoy','unlimited', 'free download.']
 
+    const [showModal, setShowModal] = useState(false)
     
+    
+    function handleCloseModal(){
+        setShowModal(false)
+    }
 
 
     return(
-        <section>
+        <>
+
+ {showModal && (<Modal handleCloseModal={handleCloseModal}>
+        <Form  handleCloseModal={handleCloseModal} />
+    </Modal>)}
+<section>
            <div  className='freeScreen'>
                     <div className='freeD'>
                 <p className='textOne message'>
@@ -34,7 +47,7 @@ export function FreeDownload (){
                         Kloudaa music app
                     </span>
                 </p>
-                <button className='regbtn2' >web app coming soon</button>
+                <button className='regbtn2' onClick={ () =>{ setShowModal(true)}} >web app coming soon</button>
 
                 <p  className='message1'>
                         Available now :</p>
@@ -55,15 +68,31 @@ export function FreeDownload (){
 
                         </a>
                     </div>
+                   
                 
                    </div>
+                     <div className='media'>
+                             <img src={screen1}  className='screen2' />
 
+                             <p className='textOne sidet'>feel</p> 
+                        <p className='textTwo sidet'>
+                            music  <span style={{color:'white'}}>in</span> 
+                        </p> 
+        
+                        <p className='classB sidet'>
+                            <span style={{color:'white'}}>a</span> new way
+                        </p>
+                     </div>
                    
              
                     <img src={klperson}  className='klperson'/>
                 
               
                 </div>
+
+
+
+
                  <div className='freeD1'>
                 <img src={screen1}  className='screen1' />
                 
@@ -89,7 +118,8 @@ export function FreeDownload (){
 
         
         
-
+ 
+ </>
     )
     
 }

@@ -21,11 +21,11 @@ export function Features (){
                     
                 </div>
                 <div className='feature-block'>
-                    <img src={feature1} />
-                     <img src={feature2} />
-                   <img src={feature3} />
-                       <img src={feature4} />
-                        <img src={feature5} />
+                    <img src={feature1}  className='description-features' />
+                     <img src={feature2} className='description-features' />
+                   <img src={feature3} className='description-features' />
+                       <img src={feature4} className='description-features' />
+                        <img src={feature5} className='description-features' />
     
                 </div>
                 <div className='spacer'></div>

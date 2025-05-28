@@ -1,10 +1,9 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
 
 .freeD {
 
-font-family: 'Nunito',sans-serif;
+font-family: 'varela-round',sans-serif;
 font-weight: 800;
 font-size: 4rem;
 line-height: 0.5rem;
@@ -114,6 +113,51 @@ width:1190px
         margin-bottom: 35px;
     }
 
+    /* Add to your Section.css or a global CSS file */
+.react-tel-input .form-control {
+  background-color: #121212 !important;
+  color: white !important;
+  border: 1px solid #bbb9b9 !important;
+  border-radius: 0.5rem !important;
+  font-size: 1em !important;
+  padding: 0.5rem 0.75rem !important;
+  width: 100% !important;
+  height: 50px !important;
+  padding-left: 48px !important; /* Increase this value if needed */
+}
+
+.react-tel-input .flag-dropdown {
+  background: #232323 !important;
+  border: 1px solid #bbb9b9 !important;
+  border-radius: 0.5rem 0 0 0.5rem !important;
+}
+
+/* Make the selected country code more visible */
+.react-tel-input .selected-flag {
+  background: #232323 !important;
+  color: #fff !important;
+  border-radius: 0.5rem 0 0 0.5rem !important;
+  font-weight: bold !important;
+  font-size: 1.1em !important;
+  border: 1px solid #bbb9b9 !important;
+}
+
+/* Make the country code in the dropdown more visible */
+.react-tel-input .country-list .country {
+  color: #fff !important;
+  background: #232323 !important;
+  font-size: 1em !important;
+}
+
+.react-tel-input .country-list .country.highlight {
+  background: #444 !important;
+  color: #ffd700 !important; /* Highlighted country code */
+  font-weight: bold !important;
+}
+
+.media{
+    display: none;
+}
 @media  (max-width: 468px){
 
     .freeScreen {
@@ -121,11 +165,14 @@ width:1190px
         flex-direction: column;
         padding-top: 70px;
         justify-content: center;
-        padding-left: 5rem;
-        padding-right: 2rem;
+        align-items: center;
+        padding-left: 3rem;
+        padding-right: 3rem;
         width: 80%;
         gap:0;
+        height: fit-content;
         }
+        
         .freeD {
 
             font-family: 'nunito';
@@ -135,6 +182,8 @@ width:1190px
         letter-spacing: 1%;
         display: flex;
         flex-direction: column;
+        align-items: center;
+    align-content: space-evenly;
         
         }
 
@@ -144,14 +193,7 @@ width:1190px
         }
         
         .freeD1{
-            font-family: 'Nunito';
-        font-weight: 800;
-        font-size: 2rem;
-        
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0px;
+            display: none;
         
         }
 
@@ -186,8 +228,28 @@ width:1190px
     border-radius: 5px;
 }
 
+.downloadClass{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.media{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+    height:100px;
+    align-content: space-evenly;
+    margin-bottom: 50px;
+}
+
 .klperson{
     width: 290px;
+}
+
+.express{
+    width: 80%;
 }
 
 .screen2{
@@ -204,6 +266,17 @@ width:1190px
 .downloadClass{
     margin-bottom: 0px;
 }
+
+
+  .react-tel-input .form-control {
+    font-size: 0.9em !important;
+    height: 36px !important;
+    padding: 0.3rem 0.5rem !important;
+    padding-left: 40px !important;
+  }
+  .react-tel-input .flag-dropdown {
+    height: 36px !important;
+  }
 
 
 }

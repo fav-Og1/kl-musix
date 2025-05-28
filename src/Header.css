@@ -35,16 +35,17 @@
 @media  (max-width: 468px){
     .header{
         
-        width:468px;
-        /*padding-left: 1rem;
+        width:90%;
+        padding-left: 1rem;
         padding-right: 2rem;
         padding-top: 0.3rem;
     padding-bottom: 0.3rem;
-    */
+    
 }
 
 .optionMenu{
     display: block;
+    
 }
 
 .regbtn{
@@ -61,10 +62,16 @@
     position: absolute;
     top: 50px;
     right: 20px;
+    left: 0;
     color: white;
     background-color: black;
     
     
+}
+
+.NavOptions ul {
+    padding:0;
+    margin-left: 10px;
 }
     }
 

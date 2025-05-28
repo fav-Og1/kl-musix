@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useState,useRef, useEffect } from 'react'
+
 import { Link } from 'react-router-dom'
 import logo from '../assets/kloudaa logo.png'
 import express from '../assets/express1.png'
@@ -23,8 +24,14 @@ export function Layout(props){
      function onShowclick ()  {
              if ( show == false) {
                  setShow(true)
+                 
+
              } else {setShow(false)};
+
+             
          }
+
+        
 
    const header = (
          <header className='header'>
@@ -37,8 +44,8 @@ export function Layout(props){
                 { show &&
                  <nav className='NavOptions'>
                      <ul><Link to='/about'>About</Link></ul>
-                     <ul><Link to='/termscon'>About</Link></ul>
-                     <ul> <Link to='/privacy'>About</Link></ul>
+                     <ul><Link to='/termscon'>Terms and Condition</Link></ul>
+                     <ul> <Link to='/privacy'>Privacy Policy</Link></ul>
                  </nav>
      }
      
@@ -60,8 +67,8 @@ export function Layout(props){
    const footer = (
      <div>
         <footer>
-            <div style={{}}>
-                <img src={express} />
+            <div className='express-holder'>
+                <img src={express} className='express' />
             </div>
             <h2>LISTEN TO YOUR MUSIC EASILY</h2>
             <p> You can download the kloudaa app using the available </p>
@@ -110,7 +117,7 @@ return(
         <Form  handleCloseModal={handleCloseModal} />
     </Modal>)}
          {header}
-            <main>
+            <main >
                 {children}
             
             </main>
