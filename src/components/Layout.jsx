@@ -1,5 +1,4 @@
-import { useState,useRef, useEffect } from 'react'
-
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../assets/kloudaa logo.png'
 import express from '../assets/express1.png'
@@ -27,9 +26,7 @@ export function Layout(props){
                  
 
              } else {setShow(false)};
-
-             
-         }
+ }
 
         
 
@@ -116,11 +113,14 @@ return(
     {showModal && (<Modal handleCloseModal={handleCloseModal}>
         <Form  handleCloseModal={handleCloseModal} />
     </Modal>)}
+      
          {header}
+          
             <main >
                 {children}
             
             </main>
+        
        {footer}
 
     </>

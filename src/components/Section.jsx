@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import screen1 from '../assets/screen1Main.png'
 import '../Section.css'
 import klperson from '../assets/klpersonmain.png'

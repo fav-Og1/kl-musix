@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 
@@ -49,6 +48,9 @@ footer {
   flex-direction: column;
   align-items: center;
   height: fit-content;
+  width: 100vw;
+  max-width: 100vw;
+  min-width: 0;
  padding-bottom: 80px; 
 }
 
@@ -203,6 +205,32 @@ button h2{
   padding-top: 0.3rem;
 }
 
+.about-page{
+  width: 100vw;
+  min-width: 0;
+  max-width: 100vw;
+  height: fit-content;
+  background-color: #121212;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-pic{
+  width: 100%;
+}
+
+.about-context{
+  width: 70%;
+  height: fit-content;
+  background-color: #232323;
+  padding: 5rem;
+  color: white;
+  border-radius: 3rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem ;
+}
+
 
 
 @media (prefers-color-scheme: light) {
@@ -221,6 +249,8 @@ button h2{
 }
 
 
+
+
 @media  (max-width:468px) {
   .footerContact {
     flex-direction: column;
@@ -230,15 +260,15 @@ button h2{
   .modal-container{
     
     place-items: center;
-  }
+  }git
   
 
   .modal-content{
     width: 80%;
   }
 .form-title{
-  font-size: 12px;
-  font-weight: 100;
+  font-size: 15px;
+  font-weight: 120;
 }
 
 .form-text{
@@ -252,4 +282,46 @@ button h2{
   justify-content: center;
 }
 
+.about-context{
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
+
+}
+
+/*
+
+@media (max-width: 467px) {
+  header,
+  .header,
+  section,
+  .section,
+  article,
+  .features,
+  footer {
+    width: 100vw;
+    max-width: 100vw;
+    min-width: 0;
+    margin: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
+  }
+
+  /* Remove any fixed widths or large paddings from children if present */
+  /*
+  .freeScreen,
+  .footerContact,
+  .downloadClass,
+  .modal-content {
+    width: 100vw;
+    max-width: 100vw;
+    min-width: 0;
+    margin: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
+  }
+}
+
+*/
