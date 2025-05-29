@@ -228,7 +228,13 @@ button h2{
   }
 
   .modal-container{
-    width: 70%;
+    
+    place-items: center;
+  }
+  
+
+  .modal-content{
+    width: 80%;
   }
 .form-title{
   font-size: 12px;

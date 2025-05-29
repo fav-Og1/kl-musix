@@ -43,9 +43,9 @@ export function FreeDownload (){
                 
                 <p className='message1'>
                     join millions of people today using the <br/>
-                    <span>
+                    
                         Kloudaa music app
-                    </span>
+                    
                 </p>
                 <button className='regbtn2' onClick={ () =>{ setShowModal(true)}} >web app coming soon</button>
 
