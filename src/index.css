@@ -31,6 +31,10 @@ body {
   min-height: 100vh; 
 }
 
+html{
+  width: 100vw;
+  overflow-x: hidden;
+}
 
 
 a {
@@ -84,7 +88,7 @@ margin-top: 60px;
  display: flex;
  justify-content: space-evenly;
   margin-top: 50px;
-  width: 100%;
+  width: 80%;
   
 }
  footer ul{
@@ -231,6 +235,12 @@ button h2{
   margin-bottom: 5rem ;
 }
 
+.foot-icon{
+  width: 25px;
+  margin-right: 25px;
+}
+
+
 
 
 @media (prefers-color-scheme: light) {
@@ -287,6 +297,9 @@ button h2{
   padding-right: 1rem;
 }
 
+.support-box{
+  width: 80%;
+}
 }
 
 /*

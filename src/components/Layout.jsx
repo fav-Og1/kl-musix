@@ -5,8 +5,10 @@ import express from '../assets/express1.png'
 import { FaBars   } from 'react-icons/fa'
 import footplaystore from '../assets/footplaystore.png'
 import footapplestore from '../assets/footapplestore.png'
-import fbsmall from '../assets/fbsmall.png'
-import igsmall from '../assets/igsmall.png'
+import fbsmall from '../assets/fb.svg'
+import igsmall from '../assets/ig.svg'
+import tiktoksmall from '../assets/tt.svg'
+import ytsmall from '../assets/yt.svg'
 import { Modal } from './Modal'
 import { Form } from './form'
 
@@ -93,12 +95,12 @@ export function Layout(props){
                         <Link to='/about'>Privacy policy</Link>
                     </ul>
                 </div>
-                <div >
+                <div className='support-box' >
                     <h4>support</h4>
-                    <Link><img src={fbsmall} /></Link>
-                    <Link><img src={igsmall} /></Link>
-                    <Link><img src={fbsmall} /></Link>
-                    <Link><img src={igsmall} /></Link>
+                    <Link><img src={fbsmall} className='foot-icon'/></Link>
+                    <Link><img src={igsmall} className='foot-icon' /></Link>
+                    <Link><img src={tiktoksmall} className='foot-icon' /></Link>
+                    <Link><img src={ytsmall}  className='foot-icon'/></Link>
                 </div>
             </div>
         </footer>
