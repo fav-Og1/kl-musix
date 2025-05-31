@@ -134,6 +134,7 @@ button:focus-visible {
   justify-content: center;
   z-index: 100;
   padding: 1rem;
+  overflow-x: hidden;
 }
 
 .modal-underlay {
@@ -267,10 +268,7 @@ button h2{
     padding-left: 30px;
   }
 
-  .modal-container{
-    
-    place-items: center;
-  }git
+  
   
 
   .modal-content{
@@ -278,7 +276,7 @@ button h2{
   }
 .form-title{
   font-size: 15px;
-  font-weight: 120;
+  font-weight: 170;
 }
 
 .form-text{

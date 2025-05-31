@@ -5,9 +5,10 @@ import 'react-phone-input-2/lib/style.css';
 
 
 
-export function Form () {
 
-    
+export function Form (props) {
+
+    const {handleCloseModal} = props
      
     return (
         <>
@@ -25,7 +26,7 @@ export function Form () {
           />
         
         <div style={{width:'100%',display:'flex',justifyContent:'center'}}>
-           <button className="submit-button">
+           <button onClick={handleCloseModal} className="submit-button">
             <h2>submit</h2>
          </button>
         </div>
