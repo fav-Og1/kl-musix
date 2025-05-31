@@ -1,20 +1,24 @@
 .header {
     background-color: black;
-    height: 10vh;
+    
     display: flex;
    width: 100vw;
   max-width: 100vw;
   min-width: 0;
+justify-content: center;
+     color: white;
     
-        
-    justify-content: space-evenly;
-     
-    color: white;
-    align-items: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    flex-wrap: wrap;
+    
 }
+.header-item{
+width:90%;
+padding-top: 0.3rem;
+padding-bottom: 0.3rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
 
 .navOptions {
     display: flex;
