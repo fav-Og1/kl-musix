@@ -34,6 +34,7 @@ export function Layout(props){
 
    const header = (
          <header className='header'>
+            <div className='header-item'>
             <Link to='/'>
                 <div  className='logoHolder'>
 
@@ -58,7 +59,7 @@ export function Layout(props){
                      className='optionMenu'
                  />
                  <button className='regbtn' onClick={ () => { setShowModal(true)}}> Web App Coming Soon</button>
-                 
+                 </div>
              </header>
          
    );
